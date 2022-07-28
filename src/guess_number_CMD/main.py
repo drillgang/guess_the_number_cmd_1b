@@ -49,7 +49,6 @@ class GTN:
         func that control input number
         """
         
-        print(self.number)
         print("Введите число: (если хотите выйти введите '-') ")
         answer=str(input())
         if answer:
@@ -63,7 +62,10 @@ class GTN:
             os.system("clear")
             print("Неверный ввод,попробуйте еще раз")
             self.guessnumber()
-        
-if __name__=="__main__":
+
+def main():
     print("Число выбрано")
     GTN().guessnumber()
+            
+if __name__=="__main__":
+    main()
